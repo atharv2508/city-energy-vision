@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Settings from "./pages/Settings";
 
+// Create a client for React Query
 const queryClient = new QueryClient();
 
 const App = () => (
