@@ -187,11 +187,11 @@ const Settings = () => {
                   <div className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <FormLabel>Email</FormLabel>
+                        <label className="text-sm font-medium mb-1 block">Email</label>
                         <Input type="email" value="admin@cityenergy.com" readOnly className="bg-muted" />
                       </div>
                       <div>
-                        <FormLabel>Role</FormLabel>
+                        <label className="text-sm font-medium mb-1 block">Role</label>
                         <Input value="Administrator" readOnly className="bg-muted" />
                       </div>
                     </div>
