@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard";
 import Analytics from "./pages/Analytics";
 import MapView from "./pages/MapView";
 import Alerts from "./pages/Alerts";
+import Calendar from "./pages/Calendar";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,7 +27,7 @@ const App = () => (
             <Route path="map" element={<MapView />} />
             <Route path="alerts" element={<Alerts />} />
             <Route path="reports" element={<Dashboard />} />
-            <Route path="calendar" element={<Dashboard />} />
+            <Route path="calendar" element={<Calendar />} />
             <Route path="settings" element={<Dashboard />} />
           </Route>
           <Route path="*" element={<NotFound />} />

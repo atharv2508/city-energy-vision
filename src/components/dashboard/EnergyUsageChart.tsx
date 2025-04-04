@@ -107,13 +107,14 @@ export function EnergyUsageChart() {
     }
   };
 
-  const formatYAxis = (value: number) => {
+  // Fixed TypeScript issue: Ensure this function returns a string
+  const formatYAxis = (value: number): string => {
     if (value >= 1000000) {
       return `${(value / 1000000).toFixed(1)}M`;
     } else if (value >= 1000) {
       return `${(value / 1000).toFixed(0)}k`;
     }
-    return value;
+    return value.toString(); // Explicitly convert to string
   };
 
   return (
